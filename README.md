@@ -22,5 +22,6 @@ In order to do that, don't forget to set up properly your HostVM.
 
 ![enable-nested-vm](Assets/enable-nested-vm.png)
 
-When it's done, you'll need to install [Vagrant](https://developer.hashicorp.com/vagrant/install)
+When it's done, you'll need to install [Vagrant](https://developer.hashicorp.com/vagrant/install).
+You'll next need to install VirtualBox.
 
