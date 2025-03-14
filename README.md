@@ -20,11 +20,11 @@ In order to do that, don't forget to set up properly your HostVM.
 
 ![enable-nested-vm](Assets/enable-nested-vm.png)
 
-**<ins>Step2:</ins>** Install [Vagrant](https://developer.hashicorp.com/vagrant/install)
+**<ins>Step2:</ins>** Install [Vagrant](https://developer.hashicorp.com/vagrant/install) on your VM
 
 To check if Vagrant is installed : 
 ```bash
 vagrant --version
 ```
-**<ins>Step3:</ins>** Install a VM Provider, we chose VirtualBox
+**<ins>Step3:</ins>** Install a VM Provider on your VM, we chose VirtualBox
 
