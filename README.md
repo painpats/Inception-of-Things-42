@@ -8,7 +8,7 @@ Score: **%**
 
 ## Getting Started
 
-**Step1:** Configure your Virtual Machine
+**<ins>Step1:</ins>** Configure your Virtual Machine
 
 We chose to use **Ubuntu 24.04.2**
 ![create-vm](Assets/create-vm.png)
@@ -20,11 +20,11 @@ In order to do that, don't forget to set up properly your HostVM.
 
 ![enable-nested-vm](Assets/enable-nested-vm.png)
 
-**Step2:** Install [Vagrant](https://developer.hashicorp.com/vagrant/install)
+**<ins>Step2:</ins>** Install [Vagrant](https://developer.hashicorp.com/vagrant/install)
 
 To check if Vagrant is installed : 
 ```bash
 vagrant --version
 ```
-**Step3:** Install a VM Provider, we chose VirtualBox
+**<ins>Step3:</ins>** Install a VM Provider, we chose VirtualBox
 
