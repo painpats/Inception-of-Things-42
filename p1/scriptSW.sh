@@ -1,15 +1,10 @@
 #!/bin/bash
 
-sudo sed -i -e 's/us.archive.ubuntu.com/archive.ubuntu.com/g' /etc/apt/sources.list
-sudo apt-get update
-sudo apt-get install -y curl
+IP_S= 192.168.56.110
+K3S_TOKEN=$(cat /var/lib/rancher/k3s/server/node-token)
 
-AGENT_IP="192.168.56.111"
-NETMASK="255.255.255.0"
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install curl
 
-SERVER_IP="192.168.56.110"
-TOKEN_FILE="/vagrant/node-token"
+curl -sfL https://get.k3s.io | K3S_URL=https://$IP_S:6443 K3S_TOKEN=$K3S_TOKEN sh -
 
-K3S_TOKEN=$(cat "$TOKEN_FILE")
-
-curl -sfL https://get.k3s.io | K3S_URL="https://$SERVER_IP:6443" K3S_TOKEN="$K3S_TOKEN" sh -
