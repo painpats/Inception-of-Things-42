@@ -4,5 +4,7 @@ sudo sed -i -e 's/us.archive.ubuntu.com/archive.ubuntu.com/g' /etc/apt/sources.l
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install -y curl
 
-IP_S="192.168.56.110"
-curl -sfL https://get.k3s.io/ | K3S_KUBECONFIG_MODE="644" INSTALL_K3S_EXEC="server --node-ip $IP_S --flannel-iface eth1" sh - 
+curl -sfL https://get.k3s.io/ | K3S_KUBECONFIG_MODE="644" INSTALL_K3S_EXEC="server --flannel-iface eth1" K3S_TOKEN=mytoken sh - 
+# cd /vagrant
+# touch token
+# sudo cp /var/lib/rancher/k3s/server/node-token token
