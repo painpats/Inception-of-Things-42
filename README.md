@@ -6,10 +6,6 @@ Mate: **[pirabaud](https://github.com/Pirabaud)**
 
 Score: **%**
 
-> [!NOTE]
-> ## Pierre ça c'est pour toi !
-> Une fois que t'auras fais le *Getting Started*, il faudra juste que t'installe tes paquets (git, code) et que tu clone le repo. Ensuite viens me voir et je t'explique ce que j'ai fais !
-
 ## Getting Started
 
 **<ins>Step1:</ins>** Configure your Virtual Machine
